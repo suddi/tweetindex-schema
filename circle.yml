@@ -8,4 +8,4 @@ dependencies:
         - pip install -r test_requirements.txt
 test:
     override:
-        - nosetests --verbose --with-coverage --config tests/setup.cfg
+        - nosetests --verbose --config tests/setup.cfg
