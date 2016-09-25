@@ -1,0 +1,7 @@
+[run]
+source = tweetindex-schema
+
+[report]
+omit =
+  */python?.?/*
+  */site-packages/*

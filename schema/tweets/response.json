@@ -1,0 +1,84 @@
+{
+    "id": "/tweets_response",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Tweets Response",
+    "type": "object",
+    "description": "The standard response schema for tweets",
+    "properties": {
+        "message": {
+            "type": "string"
+        },
+        "data": {
+           "type": "object",
+           "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Reference ID of tweet"
+                },
+                "screen_name": {
+                    "type": "string",
+                    "description": "Screen name of tweeter"
+                },
+                "full_name": {
+                    "type": "string",
+                    "description": "Full name of tweeter"
+                },
+                "location": {
+                    "type": "string",
+                    "description": "Location of tweet submission"
+                },
+                "stock": {
+                    "type": "string",
+                    "description": "Stock code mentioned in tweet"
+                },
+                "tweet": {
+                    "type": "string",
+                    "description": "Full text from tweet"
+                },
+                "sentiment": {
+                    "type": "string",
+                    "description": "Market sentiment expressed through the stock"
+                },
+                "favorited": {
+                    "type": "number",
+                    "description": "Number of times the tweet has been favorited",
+                    "maximum": 10000,
+                    "exclusiveMaximum": false
+                },
+                "retweeted": {
+                    "type": "number",
+                    "description": "Number of times the tweet has been retweeted",
+                    "maximum": 10000,
+                    "exclusiveMaximum": false
+                },
+                "is_retweet": {
+                    "type": "boolean",
+                    "description": "Whether the current tweet is a retweet"
+                },
+                "hashtags": {
+                    "type": "array",
+                    "description": "Hashtags added to tweet"
+                },
+                "user_mentions": {
+                    "type": "string",
+                    "description": "User mentions in the tweet"
+                },
+                "geo": {
+                    "type": "string",
+                    "description": "Geographic information regarding the tweet"
+                },
+                "coordinates": {
+                    "type": "string",
+                    "description": "Geographic coordinates of tweet location"
+                },
+                "created_at": {
+                    "type": "string",
+                    "description": "Creation time of tweet"
+                }
+            }
+        }
+    },
+    "required": [
+        "message"
+    ]
+}
