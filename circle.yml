@@ -3,6 +3,9 @@ machine:
         Asia/Hong_Kong
     python:
         version: "2.7"
+dependencies:
+    override:
+        - pip install -r test_requirements.txt
 test:
     override:
         - nosetests --verbose --with-coverage --config tests/setup.cfg
