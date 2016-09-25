@@ -15,6 +15,14 @@
                     "type": "string",
                     "description": "Reference ID of tweet"
                 },
+                "status": {
+                    "type": "string",
+                    "description": "Status message"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the request"
+                },
                 "screen_name": {
                     "type": "string",
                     "description": "Screen name of tweeter"
@@ -39,6 +47,10 @@
                     "type": "string",
                     "description": "Market sentiment expressed through the stock"
                 },
+                "sentiment_words": {
+                    "type": "array",
+                    "description": "Sentiment words that were expresed in the tweet"
+                },
                 "favorited": {
                     "type": "number",
                     "description": "Number of times the tweet has been favorited",
@@ -60,7 +72,7 @@
                     "description": "Hashtags added to tweet"
                 },
                 "user_mentions": {
-                    "type": "string",
+                    "type": "array",
                     "description": "User mentions in the tweet"
                 },
                 "geo": {
@@ -74,11 +86,17 @@
                 "created_at": {
                     "type": "string",
                     "description": "Creation time of tweet"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "description": "Creation time of tweet"
                 }
-            }
+            },
+            "additionalProperties": true
         }
     },
     "required": [
         "message"
-    ]
+    ],
+    "additionalProperties": true
 }

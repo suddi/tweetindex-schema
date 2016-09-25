@@ -1,0 +1,16 @@
+{
+    "id": "/get",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title" : "GET request schema",
+    "type" : "object",
+    "description": "GET request schema",
+    "properties": {
+        "statusCode": {
+            "type": "number",
+            "description": "The statusCode to be passed onto to the lambda function"
+        }
+    },
+    "required": [
+        "statusCode"
+    ]
+}

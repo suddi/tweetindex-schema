@@ -1,0 +1,7 @@
+{
+    "id": "/empty",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title" : "Empty",
+    "type" : "object",
+    "description": "Empty object schema"
+}
