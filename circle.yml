@@ -9,3 +9,6 @@ dependencies:
 test:
     override:
         - nosetests --verbose --config tests/setup.cfg
+notify:
+    webhooks:
+        - url: https://bot.suddi.io/hooks/circle
