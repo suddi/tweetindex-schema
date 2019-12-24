@@ -8,12 +8,24 @@ JSON schema used for request and response validation in AWS API Gateway for [twe
 
 ## Setup
 
+````sh
+pip install virtualenvwrapper
 ````
-pip install -r requirements.txt -r test_requirements.txt
+
+````sh
+mkvirtualenv tweetindex-schema
+
+pip install --requirement requirements.txt --requirement test_requirements.txt
+````
+
+## Linting
+
+````sh
+python setup.py lint
 ````
 
 ## Testing
 
+````sh
+python setup.py test
 ````
-nosetests --verbose --config tests/setup.cfg
-```` 
